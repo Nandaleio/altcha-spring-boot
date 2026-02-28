@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "name": "altcha-spring-boot.hmac-key",
+      "type": "java.lang.String",
+      "description": "REQUIRED: Secret key used to generate HMAC for captcha validation.",
+      "defaultValue": null
+    },
+    {
+      "name": "altcha-spring-boot.max-number",
+      "type": "java.lang.Long",
+      "description": "Maximum number used in captcha challenges.",
+      "defaultValue": 100000
+    },
+    {
+      "name": "altcha-spring-boot.expiration-in-seconds",
+      "type": "java.lang.Long",
+      "description": "Lifetime of a captcha token in seconds.",
+      "defaultValue": 1200
+    },
+    {
+      "name": "altcha-spring-boot.api-endpoint",
+      "type": "java.lang.String",
+      "description": "API path for captcha endpoints.",
+      "defaultValue": "/api/captcha"
+    }
+  ]
+}
