@@ -80,21 +80,29 @@ The library automatically exposes a captcha endpoint that generates challenges. 
 
 Include in the `head` of your HTML page
 ```html
-      <script async defer src="{YOUR BASE HREF}/altcha.min.js" type="module"></script>
+<script async defer src="{YOUR BASE HREF}/altcha.min.js" type="module"></script>
 ```
 
 Then add the component inside the form you want to protect against the bots:
 ```html
-      <altcha-widget challengeurl='{YOUR BASE HREF/api/captha}'></altcha-widget>
+<altcha-widget challengeurl='{YOUR BASE HREF/api/captha}'></altcha-widget>
 ```
 
-## Troubleshooting
+For more information about the configration of the frontend widget please refer to the [Altcha  widget documentation](https://altcha.org/docs/v2/widget-integration/) 
 
-If you have troubles during the form submit make sure you're not override the payload parameter with the name `altcha`.
+### Validating the form
 
+The form require the challenge result to be included either in :
+
+- the query params
+- the form data 
+- the header `ALTCHA-PAYLOAD`
+
+---
 
 ## Roadmap
 
-    - Automatic release to Nexus
-    - Handle more request type
-    - Conditional logging
+- [ ] More configration (eg: the header so store the challenge result)
+- [ ] Handle more request type
+- [ ] Release to Nexus
+- [x] ~~Logging~~
