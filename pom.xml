@@ -8,7 +8,7 @@
 
     <groupId>com.nandaleio</groupId>
     <artifactId>altcha-spring-boot</artifactId>
-    <version>1.0.0_RC1</version>
+    <version>1.0.0</version>
     <name>Altcha Spring Boot</name>
     <packaging>jar</packaging>
 
@@ -25,7 +25,12 @@
         <maven.compiler.release>21</maven.compiler.release>
     </properties>
 
-    <distributionManagement>
+   <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Nandaleio/altcha-spring-boot</url>
+        </repository>
     </distributionManagement>
 
     <dependencies>

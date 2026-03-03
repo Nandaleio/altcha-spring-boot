@@ -102,7 +102,7 @@ The form require the challenge result to be included either in :
 
 ## Roadmap
 
-- [ ] More configration (eg: the header so store the challenge result)
+- [ ] More configration (eg: the header to store the challenge result)
 - [ ] Handle more request type
 - [ ] Release to Nexus
 - [x] ~~Logging~~
